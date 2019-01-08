@@ -1,0 +1,135 @@
+/* ---- MOBILE-FIRST STYLING ---- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://c.pxhere.com/photos/27/71/cosmos_night_shooting_star_sky_stars-913369.jpg!d") no-repeat fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+/*general headings*/
+
+h1,
+h2 {
+    margin: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*header styling*/
+
+.header {
+    margin: 4em 0;
+    letter-spacing: 10px;
+}
+
+/*Elon's pic*/
+
+.portrait {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+}
+
+/*timeline list styling, not a full timeline tho cuz Elon does too much stuff*/
+
+.list-center {
+    /*idk why but it centers the list*/
+    display: inline-block;
+    margin: 2em;
+    list-style-type: none;
+}
+
+li {
+    text-align: left;
+}
+
+.year {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+/*quote by Elon*/
+
+blockquote {
+    padding: 2em;
+}
+
+.blk-opacity {
+    max-width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*find out more link to Wikipedia*/
+
+.more-info {
+    padding: 2em;
+    background-color: lightskyblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*link styling*/
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: green;
+}
+
+@media only screen and (min-width: 700px) {
+    .width-wrapper,
+    blockquote {
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .timeline {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .width-wrapper,
+    blockquote {
+        max-width: 800px;
+    }
+
+    .flex-container {
+        display: flex;
+
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portrait,
+    .timeline {
+        max-height: 100%;
+        width: 50%;
+    }
+}
